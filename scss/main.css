@@ -11,8 +11,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-perspective: 600px;
-          perspective: 600px;
+  -webkit-perspective: 900px;
+          perspective: 900px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }

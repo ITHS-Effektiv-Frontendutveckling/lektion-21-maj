@@ -9,9 +9,8 @@ body {
     height: 100vh;
     background: #eee;
     @include center;
-    perspective: 600px;
+    perspective: 900px;
     transform-style: preserve-3d;
-
 
     main {
         width: 400px;
