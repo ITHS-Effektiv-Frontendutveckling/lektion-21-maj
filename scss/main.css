@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body main {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body main aside {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+}
+
+body main aside.side-1 {
+  background: rgba(239, 0, 0, 0.5);
+  -webkit-transform: translate3d(-50%, 0, 0) rotateY(-90deg);
+          transform: translate3d(-50%, 0, 0) rotateY(-90deg);
+}
+
+body main aside.side-2 {
+  background: rgba(52, 239, 0, 0.5);
+  -webkit-transform: translate3d(50%, 0, 0) rotateY(90deg);
+          transform: translate3d(50%, 0, 0) rotateY(90deg);
+}
+
+body main aside.side-3 {
+  background: rgba(0, 60, 239, 0.5);
+  -webkit-transform: translate3d(0, -50%, 0) rotateX(90deg);
+          transform: translate3d(0, -50%, 0) rotateX(90deg);
+}
+
+body main aside.side-4 {
+  background: rgba(0, 235, 239, 0.5);
+  -webkit-transform: translate3d(0, 50%, 0) rotateX(-90deg);
+          transform: translate3d(0, 50%, 0) rotateX(-90deg);
+}
+
+body main aside.side-5 {
+  background: rgba(195, 0, 239, 0.5);
+  -webkit-transform: translate3d(0, 0, 200px) rotateY(0deg);
+          transform: translate3d(0, 0, 200px) rotateY(0deg);
+}
+
+body main aside.side-6 {
+  background: rgba(239, 219, 0, 0.5);
+  -webkit-transform: translate3d(0, 0, -200px) rotateY(180deg);
+          transform: translate3d(0, 0, -200px) rotateY(180deg);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+            transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg) rotateX(0deg);
+            transform: rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg) rotateX(360deg);
+            transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
